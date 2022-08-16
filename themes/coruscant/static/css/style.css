@@ -1,0 +1,267 @@
+:root {
+  --grey: rgb(180, 180, 180);
+  --grey2: rgb(122, 122, 122);
+
+  --primary-font: 'Rubik', sans-serif;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+
+  font-family: var(--primary-font);
+}
+
+.col_grey {
+  color: var(--grey)
+}
+
+body { 
+    background:     
+      linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), 
+    url(../media/2418844.jpg) no-repeat center center fixed;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+h1 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 45px;
+}
+
+.height_100 {
+  min-height: 100vh;
+}
+
+@media screen and (min-width: 768px) {
+  .brand__hoverEffect:hover {
+      transform: translateY(-8px);
+      box-shadow: 0px 3px 15px rgba(0,0,0,0.2); 
+      transition: all 0.3s ease-in-out;
+  }
+}
+
+.cardAnchor {
+  text-decoration: none;
+  color: black;
+}
+
+.cardAnchor:hover {
+  color: black;
+}
+
+.coruscantCard {
+  color: white;
+  border: 3px solid var(--grey2);
+}
+
+.coruscantCard:hover {
+  border: 3px solid white;
+}
+
+.icon-sm {
+  max-width: 40px;
+}
+
+.backdrFilter {
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(5px);
+}
+
+/********************************************************************************/
+/* Card Background Gif Shenanigans */
+
+/* 
+  Background Gifs are only applied on Desktop (just too much on mobile) 
+  To add new => Add gif to "PlanetGifs" Copy backgr_gif_{gifname} and backgr_gif_{gifname}:hover
+  Copy card in index and replace {gifname}
+*/
+
+
+@media screen and (min-width: 768px) {
+
+  .backgr_gif_coruscant{
+    background: none;
+  }
+  
+  .backgr_gif_coruscant:hover {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), 
+    url(../media/planetGifs/coruscant.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .backgr_gif_archive{
+    background: none;
+  }
+  
+  .backgr_gif_archive:hover {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), 
+    url(../media/planetGifs/archive.webp) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .backgr_gif_hyperspace{
+    background: none;
+  }
+  
+  .backgr_gif_hyperspace:hover {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), 
+    url(../media/planetGifs/hyperspace.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .backgr_gif_council{
+    background: none;
+  }
+  
+  .backgr_gif_council:hover {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), 
+    url(../media/planetGifs/council.webp) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .backgr_gif_cloud{
+    background: none;
+  }
+  
+  .backgr_gif_cloud:hover {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), 
+    url(../media/planetGifs/cloud.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .backgr_gif_credits{
+    background: none;
+  }
+  
+  .backgr_gif_credits:hover {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), 
+    url(../media/planetGifs/credits.gif) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .backgr_gif_done{
+    background: none;
+  }
+  
+  .backgr_gif_done:hover {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), 
+    url(../media/planetGifs/done.gif) no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .backgr_gif_home{
+    background: none;
+  }
+  
+  .backgr_gif_home:hover {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ), 
+    url(../media/planetGifs/home.webp) no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .backgr_gif_deathStar{
+    background: none;
+  }
+  
+  .backgr_gif_deathStar:hover {
+    background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ), 
+    url(../media/planetGifs/deathStar.gif) no-repeat left center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+/*****************************************************************/
+/* FOOTER */
+
+.footer p {
+  color: var(--grey);
+  font-size: 13px;
+}
+
+.footer p a {
+  color: white;
+}
