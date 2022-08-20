@@ -1,5 +1,6 @@
 # Base Image
-FROM apache
+FROM ubuntu:20.04
+RUN apt-get update
 
 # The Hugo Version
 ARG Version=0.92.0
@@ -14,3 +15,4 @@ WORKDIR /site
 
 # Run Hugo
 RUN /hugo
+
