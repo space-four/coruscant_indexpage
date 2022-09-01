@@ -285,3 +285,16 @@ h1 {
 .footer p a {
   color: white;
 }
+
+/********************************************************************************/
+/* Element Styles */
+
+/* Mostly Customstuff to Overwrite Bootstrap Defaults */
+
+@media screen and (min-width: 576px) {
+
+  .rounded-xs {
+    border-radius: 0.375rem;
+  }
+
+}

@@ -1,37 +1,62 @@
-<nav class="navbar navbar-expand-lg backdrFilter navbar-dark fixed-top">
-    <div class="container ">
-        <a class="navbar-brand" href="#">
-            <img src="media/space_four_icon_weiss.png" alt="" height="30">
-        </a>      
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<!--
+  Navbar utilizing Bootstrap 5 Navbar as a basic
+  > Has been refactored to be used alongside Hugo's Menu System
+
+  https://gohugo.io/content-management/menus/
+  https://getbootstrap.com/docs/5.2/components/navbar/
+-->
+
+<nav class="navbar navbar-expand-lg backdrFilter navbar-dark fixed-top" aria-label="Main Navigation">
+
+  <div class="container ">
+
+  <!-- Brand Logo -->
+
+    <a class="navbar-brand" href="/">
+        <img src="media/space_four_icon_weiss.png" alt="" height="30">
+    </a>
+    
+    <!-- Mobile Nav Toggle -->
+     
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Main Navigation -->
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!--
+          range - Hugo's forEach 
+            Range iterares of the main Menu we specified by passing Context .Site.Menus.main and applies the declaration inside the logic for every element of main menu
+            
+            > IsMenuCurrent is a method of the page Object 
+            - will return true if the current page is the same as the page in our menu item.
+             
+            > However, by passing .Site.Menus we set the current context to menu data inside the range method
+              - For isMenuCurrent to Work, we need the page context
+              - Solution: $currentPage 
+                - => Custom Variable outside our Range Logic > Current Context is stored in the dot. Then we can access this from inside our Range Logic.
+                - Think of it as a 'Global Scope Variable'
+            > pageRef variable in config.toml needs to be set to the path of our current page in order to make this work
+        -->
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
+            <a 
+              class=" nav-link {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"
+              href="{{ .URL }}">
+              {{ .Name }}
             </a>
-            <ul class="dropdown-menu backdrFilter text-white">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
           </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
+        {{ end }}
+      </ul>
 
-        <button class="button-sp4">Kontakt</button>
-      </div>
+      <!-- Contact Button --->
+
+      <button class="button-sp4">Kontakt</button>
+
     </div>
-  </nav>
+  </div>
+</nav>
