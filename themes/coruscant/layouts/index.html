@@ -1,13 +1,16 @@
-{{ define "main" }}white
+{{ define "main" }}
+
+<audio id="clickSound" src="media/sounds/clickSound.wav" preload="auto">
+	Your browser does not support the <code>audio</code> element.
+</audio>
 
 <div class="container mt-5">
   
   <div class="row  mb-5 backdrFilter rounded py-2 shadow">
-    <h1 class="text-white | mb-2">Web + App Development</h1>
-    <p class="lead text-white | mb-2"><strong>Welcome Home, Traveller. What are you up to?</strong></p>
+    <p class="lead text-white | my-2"><strong>Welcome Home, Traveller. What are you up to?</strong></p>
   </div>
 
-  <div class="row mb-5 shadow">
+  <div class="row mb-5 shadow playClick">
     <h5 class="col_grey backdrFilter rounded py-2">Infrastruktur</h5>
   </div>
 
@@ -15,7 +18,7 @@
       
     <div class="col-lg-2 col-6 ">
       <a href="https://www.space-4.de" class="cardAnchor">
-      <div class="card coruscantCard backdrFilter brand__hoverEffect backgr_gif_home | mb-md-3 ">
+      <div class="card coruscantCard | backdrFilter brand__hoverEffect backgr_gif_home | mb-md-3 ">
         <div class="card-body">
           <img class="icon-sm mb-4" src="media/space_four_icon_weiss.png">
           <h4 class="mb-2">Space-4.de</h4>

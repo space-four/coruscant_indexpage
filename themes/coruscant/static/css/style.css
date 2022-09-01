@@ -2,6 +2,8 @@
   --grey: rgb(180, 180, 180);
   --grey2: rgb(122, 122, 122);
 
+  --primaryColor: #6247aa;
+
   --primary-font: 'Rubik', sans-serif;
 }
 
@@ -29,7 +31,8 @@ time, mark, audio, video {
   color: var(--grey)
 }
 
-body { 
+body {
+    padding-top: 75px; 
     background:     
       linear-gradient(
       rgba(0, 0, 0, 0.6), 
@@ -56,7 +59,7 @@ h1 {
 @media screen and (min-width: 768px) {
   .brand__hoverEffect:hover {
       transform: translateY(-8px);
-      box-shadow: 0px 3px 15px rgba(0,0,0,0.2); 
+      box-shadow: 0px 0px 25px 0px var(--primaryColor);
       transition: all 0.3s ease-in-out;
   }
 }
@@ -86,6 +89,23 @@ h1 {
 .backdrFilter {
   background-color: rgba(255, 255, 255, .15);  
   backdrop-filter: blur(5px);
+  
+}
+
+/********************************************************************************/
+/* Buttons */
+
+.button-sp4 {
+  border-radius: 25px;
+  padding: 7px 30px;
+  background: transparent;
+  box-shadow: 4px 3px 0px 2px #422E77;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: #6247AA;
+	color: white;
+	font: var(--primary-font);
+	cursor: pointer;
 }
 
 /********************************************************************************/
