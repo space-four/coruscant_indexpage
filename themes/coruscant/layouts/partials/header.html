@@ -30,28 +30,66 @@
         <!--
           range - Hugo's forEach 
             Range iterares of the main Menu we specified by passing Context .Site.Menus.main and applies the declaration inside the logic for every element of main menu
-            
-            > IsMenuCurrent is a method of the page Object 
-            - will return true if the current page is the same as the page in our menu item.
-             
-            > However, by passing .Site.Menus we set the current context to menu data inside the range method
-              - For isMenuCurrent to Work, we need the page context
-              - Solution: $currentPage 
-                - => Custom Variable outside our Range Logic > Current Context is stored in the dot. Then we can access this from inside our Range Logic.
-                - Think of it as a 'Global Scope Variable'
+
             > pageRef variable in config.toml needs to be set to the path of our current page in order to make this work
-        -->
+            > parent variable in config.toml determines if a nav-item is the parent of another
+
+          -->
+
         {{ $currentPage := . }}
+        <!--
+          - For isMenuCurrent to work, we need the page context
+            > By passing .Site.Menus we set the current context inside 'range'-logic to 'menu data'
+            > Solution: Custom Variable $currentPage to make page context accessible
+            > Hugo stores current context in dot '.'
+        -->
+
         {{ range .Site.Menus.main }}
-          <li class="nav-item">
-            <a 
-              class=" nav-link {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"
-              href="{{ .URL }}">
+
+        {{ if .HasChildren }}
+          <!-- If current menu item has children, apply this block of code, with Bootstap Dropdown Classes-->
+          <li class="nav-item dropdown">
+
+            <!-- Nav-Link with Dropdown Toggle -->
+            <!-- 
+              If current Page is Current Menue Item => Add class 'active' from BS 
+              > IsCurrentPage will return true if the current page is the same as the page in our menu item.
+            -->
+            <a class="nav-link dropdown-toggle | {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}" href="{{ .URL }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               {{ .Name }}
             </a>
+            
+            <!-- Dropdown Menu -->
+            <ul class="dropdown-menu">
+              {{ range .Children }}
+              <!-- Create a child-entry in dropdown for every child item -->
+                <li>
+                  <a
+                  class="dropdown-item | {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"
+                  href="{{ .URL }}">
+                    {{ .Name }}
+                  </a>
+                </li>
+              {{ end }}
+            </ul>
+
           </li>
+
+        {{ else }}
+        <!-- If current item has no children, render them as normal Bootstrap Nav-Links -->
+
+          <li class="nav-item">
+            <a
+            class="nav-link | {{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}"
+            href="{{ .URL }}">
+            {{ .Name }}
+            </a>
+          </li>
+
         {{ end }}
-      </ul>
+      {{ end }}
+
+    </ul>
 
       <!-- Contact Button --->
 
@@ -60,3 +98,4 @@
     </div>
   </div>
 </nav>
+

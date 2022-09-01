@@ -12,20 +12,35 @@ theme = "coruscant"
     name = "Home"
     pre = "home"
     url = "/"
-    weight = 1
+    weight = 10
   [[menu.main]]
     pageRef="posts"
     name = "Posts"
     pre = "pen-tool"
     url = "https://www.google.de"
-    weight = 2
+    weight = 20
+  [[menu.main]]
+    pageRef="facebook"
+    name = "Facebook"
+    pre = "facebook"
+    url = "https://www.facebook.de"
+    weight = 25
+    parent = "Posts"
+  [[menu.main]]
+    pageRef="facebook"
+    name = "Alibaba"
+    pre = "facebook"
+    url = "https://www.facebook.de"
+    weight = 26
+    parent = "Posts"
   [[menu.main]]
     pageRef="tags"
     name = "Tags"
     pre = "tag"
     url = "https://www.google.de"
-    weight = 3
+    weight = 30
 
+# Some Instructions to Help Hugo find Bootstrap Stuff and Render them to Public when 'Hugo'
 [module]
   [[module.mounts]]
     source = "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
