@@ -37,7 +37,7 @@ time, mark, audio, video {
 }
 
 .brandSvg_header:hover, .brandSvg_header circle:hover {
-  fill: var(--primaryColor);.
+  fill: var(--primaryColor);
   transition: fill 0.2s ease-in-out;
 }
 
