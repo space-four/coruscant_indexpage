@@ -31,6 +31,16 @@ time, mark, audio, video {
   color: var(--grey)
 }
 
+.brandSvg_header, .brandSvg_header circle{
+  fill: #ffffff;
+  height: 30px;
+}
+
+.brandSvg_header:hover, .brandSvg_header circle:hover {
+  fill: var(--primaryColor);
+  transition: fill 0.2s ease-in-out;
+}
+
 body {
     padding-top: 75px; 
     background:     
@@ -106,6 +116,14 @@ h1 {
 	color: white;
 	font: var(--primary-font);
 	cursor: pointer;
+  letter-spacing: 0.1rem;
+  font-weight: 4s00;
+}
+
+.button-sp4:hover {
+  box-shadow: none;
+  transform: translate(3px, 4px);
+  transition: all 0.1s ease;
 }
 
 /********************************************************************************/
