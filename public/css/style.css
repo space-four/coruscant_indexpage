@@ -7,6 +7,8 @@
   --primary-font: 'Rubik', sans-serif;
 }
 
+/* CSS Prefix */
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -27,6 +29,34 @@ time, mark, audio, video {
   font-family: var(--primary-font);
 }
 
+body {
+  padding-top: 75px; 
+  background:     
+    linear-gradient(
+    rgba(0, 0, 0, 0.6), 
+    rgba(0, 0, 0, 0.6)
+  ), 
+  url(../media/2418844.jpg) no-repeat center center fixed;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h1 {
+font-weight: 600;
+letter-spacing: 2px;
+font-size: 45px;
+}
+
+.height_100 {
+min-height: 100vh;
+}
+
+/******************************************************************************/
+/* Colors */
+
 .col_grey {
   color: var(--grey)
 }
@@ -41,30 +71,20 @@ time, mark, audio, video {
   transition: fill 0.2s ease-in-out;
 }
 
-body {
-    padding-top: 75px; 
-    background:     
-      linear-gradient(
-      rgba(0, 0, 0, 0.6), 
-      rgba(0, 0, 0, 0.6)
-    ), 
-    url(../media/2418844.jpg) no-repeat center center fixed;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-h1 {
-  font-weight: 600;
-  letter-spacing: 2px;
-  font-size: 45px;
+.backdrFilter {
+  background-color: rgba(255, 255, 255, 0.15);  
+  backdrop-filter: blur(5px);
+  
 }
 
-.height_100 {
-  min-height: 100vh;
+.backdrFilter-2 {
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(25px);
+  
 }
+
+/*****************************************************************************/
+/* Card Styles */
 
 @media screen and (min-width: 768px) {
   .brand__hoverEffect:hover {
@@ -94,12 +114,6 @@ h1 {
 
 .icon-sm {
   max-width: 40px;
-}
-
-.backdrFilter {
-  background-color: rgba(255, 255, 255, .15);  
-  backdrop-filter: blur(5px);
-  
 }
 
 /********************************************************************************/

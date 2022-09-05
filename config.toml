@@ -5,6 +5,7 @@ theme = "coruscant"
 
 # Main menu
 # pageRef => Needed for Highliting the Active Nav-Item
+# Parent => Determines the parent-nav-item. Needs to be 'Name' of parent
 
 [menu]
   [[menu.main]]
@@ -14,51 +15,25 @@ theme = "coruscant"
     url = "/"
     weight = 10
   [[menu.main]]
-    pageRef="posts"
-    name = "Posts"
-    pre = "pen-tool"
-    url = "https://www.google.de"
+    name = "Services"
+    pre = "services"
+    url = "/services"
     weight = 20
   [[menu.main]]
-    pageRef="facebook"
-    name = "Facebook"
-    pre = "facebook"
-    url = "https://www.facebook.de"
+    pageRef="uiux"
+    name = "Ui/Ux Design"
+    pre = "uiux"
+    url = "/uiux"
     weight = 25
-    parent = "Posts"
+    parent = "Services"
   [[menu.main]]
-    pageRef="facebook"
-    name = "Alibaba"
-    pre = "facebook"
-    url = "https://www.facebook.de"
+    pageRef="webdevelopment"
+    name = "Web Development"
+    pre = "webdevelopment"
+    url = "/webdevelopment"
     weight = 26
-    parent = "Posts"
-  [[menu.main]]
-    pageRef="tags"
-    name = "Tags"
-    pre = "tag"
-    url = "https://www.google.de"
-    weight = 30
-[[menu.main]]
-    pageRef="test2"
-    name = "Test2"
-    pre = "test2"
-    url = "https://www.google.de"
-    weight = 40
-  [[menu.main]]
-    pageRef="test3"
-    name = "Test3"
-    pre = "test3"
-    url = "https://www.facebook.de"
-    weight = 41
-    parent = "Test2"
-  [[menu.main]]
-    pageRef="test4"
-    name = "Test4"
-    pre = "test4"
-    url = "https://www.facebook.de"
-    weight = 42
-    parent = "Test2"
+    parent = "Services"
+
 
 # Some Instructions to Help Hugo find Bootstrap Stuff and Render them to Public when 'Hugo'
 [module]
