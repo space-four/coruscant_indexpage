@@ -14,10 +14,9 @@ theme = "coruscant"
     pre = "home"
     url = "/"
     weight = 10
+
   [[menu.main]]
     name = "Services"
-    pre = "services"
-    url = "/services"
     weight = 20
   [[menu.main]]
     pageRef="uiux"
@@ -33,6 +32,40 @@ theme = "coruscant"
     url = "/webdevelopment"
     weight = 26
     parent = "Services"
+  [[menu.main]]
+    pageRef="onlinemarketing"
+    name = "Online Marketing"
+    pre = "onlinemarketing"
+    url = "/online-marketing"
+    weight = 27
+    parent = "Services"
+
+  [[menu.main]]
+    pageRef="company"
+    name = "Company"
+    weight = 30
+    parent = ""
+  [[menu.main]]
+    pageRef="career"
+    name = "Jobs, Jobs, Jobs"
+    pre = "career"
+    url = "/career"
+    weight = 35
+    parent = "Company"
+  [[menu.main]]
+    pageRef="resources"
+    name = "Resources"
+    pre = "resources"
+    url = "/resources"
+    weight = 35
+    parent = "Company"
+  [[menu.main]]
+    pageRef="coruscant"
+    name = "Coruscant"
+    pre = "coruscant"
+    url = "/coruscant"
+    weight = 36
+    parent = "Company"
 
 
 # Some Instructions to Help Hugo find Bootstrap Stuff and Render them to Public when 'Hugo'

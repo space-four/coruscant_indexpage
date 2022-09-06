@@ -1,10 +1,13 @@
 :root {
+  /* STYLE GUIDE */
   --grey: rgb(180, 180, 180);
   --grey2: rgb(122, 122, 122);
 
   --primaryColor: #6247aa;
 
   --primary-font: 'Rubik', sans-serif;
+
+  --space-black: #060f12;
 }
 
 /* CSS Prefix */
@@ -29,14 +32,62 @@ time, mark, audio, video {
   font-family: var(--primary-font);
 }
 
-body {
-  padding-top: 75px; 
+.color-brand {
+  color: var(--primaryColor)
+}
+
+h1 {
+  font-weight: 400;
+}
+
+h2 {
+  font-weight: 400;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+.p-md {
+  font-size: 18px;
+}
+
+.p-l {
+  font-size: 22px;
+}
+
+.anchor-brand {
+  color: white;
+  text-decoration: underline;
+}
+
+.anchor-brand:hover {
+  color: var(--primaryColor);
+  text-decoration: underline;
+  transition: all ease 0.2s;
+}
+
+.kicker {
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.spacer {
+  margin-top: 300px;
+}
+
+.background-coruscant {
   background:     
     linear-gradient(
     rgba(0, 0, 0, 0.6), 
     rgba(0, 0, 0, 0.6)
   ), 
-  url(../media/2418844.jpg) no-repeat center center fixed;
+  url(../media/2418844.jpg) no-repeat center bottom fixed;
+}
+
+body {
+  padding-top: 75px; 
+  background-color: var(--space-black);
 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -44,14 +95,8 @@ body {
   background-size: cover;
 }
 
-h1 {
-font-weight: 600;
-letter-spacing: 2px;
-font-size: 45px;
-}
-
-.height_100 {
-min-height: 100vh;
+.dottedBackground {
+  background-image: url('/media/images/nnnoise.svg');
 }
 
 /******************************************************************************/

@@ -1,0 +1,43 @@
+/******************************************************************************/
+/* Bootstrap Expansions */
+
+
+.py-6, .pt-6 {
+    padding-top: 4.5rem ;
+  }
+  
+  .py-6, .pb-6 {
+    padding-bottom: 4.5rem ;
+  }
+  
+  .py-7, .pt-7 {
+    padding-top: 6rem ;
+  }
+  
+  .py-7, .pb-7 {
+    padding-bottom: 6rem ;
+  }
+  
+  .py-8, .pt-8 {
+    padding-top: 7.5rem ;
+  }
+  
+  .py-8, .pb-8 {
+    padding-bottom: 7.5rem ;
+  }
+  
+  .py-9, .pt-9 {
+    padding-top: 9rem ;
+  }
+  
+  .py-9, .pb-9 {
+    padding-bottom: 9rem ;
+  }
+  
+  .py-10, .pt-10 {
+    padding-top: 13rem ;
+  }
+  
+  .py-10, .pb-10 {
+    padding-bottom: 13rem ;
+  }

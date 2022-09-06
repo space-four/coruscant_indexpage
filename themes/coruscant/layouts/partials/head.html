@@ -3,12 +3,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrapExpansion.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+
+    <base href="/"/>
 
     {{ $title := print .Site.Title " | " .Title }}
     {{ if .IsHome }}{{ $title = .Site.Title }}{{ end }}
     <title>{{ $title }}</title>
 
-    <link rel="icon" type="image/x-icon" href="media/space_four_icon_weiss.png">
+    <link rel="icon" type="image/x-icon" href="/media/space_four_icon_weiss.png">
 </head>
