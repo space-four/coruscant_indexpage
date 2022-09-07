@@ -32,9 +32,18 @@ time, mark, audio, video {
   font-family: var(--primary-font);
 }
 
-.color-brand {
-  color: var(--primaryColor)
+body {
+  padding-top: 75px; 
+  background-color: var(--space-black);
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+/******************************************************************************/
+/* Font Styles */
 
 h1 {
   font-weight: 400;
@@ -56,6 +65,11 @@ h3 {
   font-size: 22px;
 }
 
+.kicker {
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
 .anchor-brand {
   color: white;
   text-decoration: underline;
@@ -67,53 +81,35 @@ h3 {
   transition: all ease 0.2s;
 }
 
-.kicker {
-  font-weight: 700;
-  letter-spacing: 1.2px;
+/******************************************************************************/
+/* Colors */
+
+.col_brand {
+  color: var(--primaryColor)
 }
 
-.spacer {
-  margin-top: 300px;
+.col_grey {
+  color: var(--grey)
 }
 
-.background-coruscant {
+/*****************************************************************************/
+/* Background Styles */
+
+.bg_dotted {
+  background: url('/media/images/backgr_dots.svg') no-repeat center bottom fixed;
+}
+
+.bg_noise {
+  background: url('/media/images/nnnoise.svg') repeat center bottom fixed;
+}
+
+.bg_coruscant {
   background:     
     linear-gradient(
     rgba(0, 0, 0, 0.6), 
     rgba(0, 0, 0, 0.6)
   ), 
   url(../media/2418844.jpg) no-repeat center bottom fixed;
-}
-
-body {
-  padding-top: 75px; 
-  background-color: var(--space-black);
-
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.dottedBackground {
-  background-image: url('/media/images/nnnoise.svg');
-}
-
-/******************************************************************************/
-/* Colors */
-
-.col_grey {
-  color: var(--grey)
-}
-
-.brandSvg_header, .brandSvg_header circle{
-  fill: #ffffff;
-  height: 30px;
-}
-
-.brandSvg_header:hover, .brandSvg_header circle:hover {
-  fill: var(--primaryColor);
-  transition: fill 0.2s ease-in-out;
 }
 
 .backdrFilter {
@@ -125,7 +121,6 @@ body {
 .backdrFilter-2 {
   background-color: rgba(255, 255, 255, .15);  
   backdrop-filter: blur(25px);
-  
 }
 
 /*****************************************************************************/
@@ -157,14 +152,10 @@ body {
   border: 3px solid white;
 }
 
-.icon-sm {
-  max-width: 40px;
-}
-
 /********************************************************************************/
 /* Buttons */
 
-.button-sp4 {
+.button_brand {
   border-radius: 25px;
   padding: 7px 30px;
   background: transparent;
@@ -179,7 +170,7 @@ body {
   font-weight: 4s00;
 }
 
-.button-sp4:hover {
+.button_brand:hover {
   box-shadow: none;
   transform: translate(3px, 4px);
   transition: all 0.1s ease;
@@ -364,9 +355,28 @@ body {
 }
 
 /********************************************************************************/
-/* Element Styles */
+/* Miscellaneous */
 
 /* Mostly Customstuff to Overwrite Bootstrap Defaults */
+
+.brandSvg_header, .brandSvg_header circle{
+  fill: #ffffff;
+  height: 30px;
+}
+
+.brandSvg_header:hover, .brandSvg_header circle:hover {
+  fill: var(--primaryColor);
+  transition: fill 0.2s ease-in-out;
+}
+
+.spacer {
+  margin-top: 300px;
+}
+
+.icon-sm {
+  max-width: 40px;
+}
+
 
 @media screen and (min-width: 576px) {
 
