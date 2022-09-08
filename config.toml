@@ -19,10 +19,10 @@ theme = "coruscant"
     weight = 15
     parent = "SP4"
   [[menu.main]]
-    pageRef = ""
+    pageRef = "portfolio"
     name = "Portfolio"
     pre = "portfolio"
-    url = "/"
+    url = "/portfolio"
     weight = 16
     parent = "SP4"
 

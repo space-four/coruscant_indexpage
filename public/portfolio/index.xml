@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Coruscant</title>
-    <link>http://coruscant.space-4.de/</link>
-    <description>Recent content on Coruscant</description>
+    <title>Portfolios on Coruscant</title>
+    <link>http://coruscant.space-4.de/portfolio/</link>
+    <description>Recent content in Portfolios on Coruscant</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language>
-    <lastBuildDate>Thu, 08 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://coruscant.space-4.de/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://coruscant.space-4.de/portfolio/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Sick Ui/Ux Project</title>
       <link>http://coruscant.space-4.de/portfolio/project1-kopie-2-kopie/</link>
@@ -113,33 +113,6 @@
       
       <guid>http://coruscant.space-4.de/portfolio/project1/</guid>
       <description>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>http://coruscant.space-4.de/notaproject/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://coruscant.space-4.de/notaproject/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>TemplateTest2</title>
-      <link>http://coruscant.space-4.de/servicespages/templatetest2/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://coruscant.space-4.de/servicespages/templatetest2/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ui/Ux Design</title>
-      <link>http://coruscant.space-4.de/servicespages/uiux-design/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://coruscant.space-4.de/servicespages/uiux-design/</guid>
-      <description>Lorem IpsumLorem to the foobaring IpsumLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Lorem IpsumLorem to the foobaring IpsumLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</description>
     </item>
     
   </channel>

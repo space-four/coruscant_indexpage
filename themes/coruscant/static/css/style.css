@@ -93,6 +93,28 @@ h3 {
 }
 
 /*****************************************************************************/
+/* Blog Styles */
+
+.blog_tile_summ {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
+}
+
+.blog_tile_summ:hover {
+  color: white;
+}
+
+.blog_tile_title {
+  text-decoration: none;
+  color: white;
+}
+
+.blog_tile_title:hover {
+  color: var(--primaryColor);
+}
+
+/*****************************************************************************/
 /* Background Styles */
 
 .bg_dotted {
@@ -150,12 +172,12 @@ h3 {
   color: black;
 }
 
-.coruscantCard {
+.card_brand {
   color: white;
   border: 3px solid var(--grey2);
 }
 
-.coruscantCard:hover {
+.card_brand:hover {
   border: 3px solid white;
 }
 
@@ -189,7 +211,7 @@ h3 {
 
 .btn_brand_scnd {
   background-color: white;
-  color: var(--space-black)
+  color: var(--space-black);
   border: none;
 }
 
@@ -386,7 +408,11 @@ h3 {
   transition: fill 0.2s ease-in-out;
 }
 
-.spacer {
+.spacer_100 {
+  margin-top: 100px;
+}
+
+.spacer_300 {
   margin-top: 300px;
 }
 

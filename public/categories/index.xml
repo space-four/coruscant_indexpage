@@ -5,6 +5,16 @@
     <link>http://coruscant.space-4.de/categories/</link>
     <description>Recent content in Categories on Coruscant</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>de-de</language><atom:link href="http://coruscant.space-4.de/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>de-de</language>
+    <lastBuildDate>Thu, 08 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://coruscant.space-4.de/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>UiUx</title>
+      <link>http://coruscant.space-4.de/categories/uiux/</link>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://coruscant.space-4.de/categories/uiux/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
