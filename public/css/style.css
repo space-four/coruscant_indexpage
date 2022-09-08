@@ -96,7 +96,7 @@ h3 {
 /* Background Styles */
 
 .bg_dotted {
-  background: url('/media/images/backgr_dots.svg') no-repeat center bottom fixed;
+  background: url('/media/images/backgr_dots.svg') repeat center bottom fixed;
 }
 
 .bg_noise {
@@ -113,16 +113,23 @@ h3 {
 }
 
 .backdrFilter {
-  background-color: rgba(255, 255, 255, 0.15);  
-  backdrop-filter: blur(5px);
-  
+  /* Fallback if @supports does not work */
+  background: hsl(0 0% 80% / 0.8);
 }
 
+@supports (backdrop-filter: blur(1rem)) {
+  /*If Browser supports Backdrop-Filter -> Use this instead of other background styles from above*/
+  .backdrFilter {
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(0.5rem);
+  }
+}
+/*
 .backdrFilter-2 {
   background-color: rgba(255, 255, 255, .15);  
   backdrop-filter: blur(25px);
 }
-
+*/
 /*****************************************************************************/
 /* Card Styles */
 
@@ -155,25 +162,35 @@ h3 {
 /********************************************************************************/
 /* Buttons */
 
-.button_brand {
+
+.btn_brand {
   border-radius: 25px;
   padding: 7px 30px;
-  background: transparent;
+	font: var(--primary-font);
+	cursor: pointer;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+}
+
+.btn_brand_prm {
   box-shadow: 4px 3px 0px 2px #422E77;
   border-style: solid;
   border-width: 2px 2px 2px 2px;
   border-color: #6247AA;
+  background: var(--primaryColor);
 	color: white;
-	font: var(--primary-font);
-	cursor: pointer;
-  letter-spacing: 0.1rem;
-  font-weight: 4s00;
 }
 
-.button_brand:hover {
+.btn_brand_prm:hover {
   box-shadow: none;
   transform: translate(3px, 4px);
   transition: all 0.1s ease;
+}
+
+.btn_brand_scnd {
+  background-color: white;
+  color: var(--space-black)
+  border: none;
 }
 
 /********************************************************************************/

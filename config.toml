@@ -9,17 +9,28 @@ theme = "coruscant"
 
 [menu]
   [[menu.main]]
-    pageRef="/"
+    name = "SP4"
+    weight = 10
+  [[menu.main]]
+    pageRef = "/"
     name = "Home"
     pre = "home"
     url = "/"
-    weight = 10
+    weight = 15
+    parent = "SP4"
+  [[menu.main]]
+    pageRef = ""
+    name = "Portfolio"
+    pre = "portfolio"
+    url = "/"
+    weight = 16
+    parent = "SP4"
 
   [[menu.main]]
     name = "Services"
     weight = 20
   [[menu.main]]
-    pageRef="uiux"
+    pageRef="uiux-design"
     name = "Ui/Ux Design"
     pre = "uiux"
     url = "/uiux"
@@ -41,8 +52,8 @@ theme = "coruscant"
     parent = "Services"
 
   [[menu.main]]
-    pageRef="company"
-    name = "Company"
+    pageRef="about"
+    name = "About"
     weight = 30
     parent = ""
   [[menu.main]]
@@ -51,21 +62,21 @@ theme = "coruscant"
     pre = "career"
     url = "/career"
     weight = 35
-    parent = "Company"
+    parent = "About"
   [[menu.main]]
     pageRef="resources"
     name = "Resources"
     pre = "resources"
     url = "/resources"
     weight = 35
-    parent = "Company"
+    parent = "About"
   [[menu.main]]
     pageRef="coruscant"
     name = "Coruscant"
     pre = "coruscant"
     url = "/coruscant"
     weight = 36
-    parent = "Company"
+    parent = "About"
 
 
 # Some Instructions to Help Hugo find Bootstrap Stuff and Render them to Public when 'Hugo'

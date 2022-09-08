@@ -7,21 +7,21 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>de-de</language><atom:link href="http://coruscant.space-4.de/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>TemplateTest</title>
-      <link>http://coruscant.space-4.de/servicespages/templatetest/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://coruscant.space-4.de/servicespages/templatetest/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>TemplateTest2</title>
       <link>http://coruscant.space-4.de/servicespages/templatetest2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://coruscant.space-4.de/servicespages/templatetest2/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Ui/Ux Design</title>
+      <link>http://coruscant.space-4.de/servicespages/uiux-design/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://coruscant.space-4.de/servicespages/uiux-design/</guid>
+      <description>Lorem IpsumLorem to the foobaring IpsumLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.Lorem IpsumLorem to the foobaring IpsumLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</description>
     </item>
     
   </channel>
