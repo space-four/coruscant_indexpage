@@ -10,15 +10,14 @@
   --gray-800: #343a40;
   --gray-900: #212529;
 
-
   --primaryColor: #6247aa;
 
-  --primary-font: 'Rubik', sans-serif;
-
   --space-black: #060f12;
-
+  
   --linkColor: white;
   --linkColorHover: rgb(155, 155, 155);
+
+  --primary-font: 'Rubik', sans-serif;
 }
 
 /* CSS Prefix */
@@ -271,7 +270,8 @@ h3 {
 @media screen and (min-width: 768px) {
   .brand__hoverEffect:hover {
       transform: translateY(-8px);
-      box-shadow: 0px 0px 25px 0px var(--primaryColor);
+      box-shadow:  14px 14px 28px #020607,
+      -14px -14px 28px #0a181d;
       transition: all 0.3s ease-in-out;
   }
 }
@@ -287,11 +287,11 @@ h3 {
 
 .card_brand {
   color: white;
-  border: 0px solid var(--grey2);
+  border: 2px solid var(--gray-700);
 }
 
 .card_brand:hover {
-  border: 0px solid white;
+  border: 2px solid white;
 }
 
 /********************************************************************************/
