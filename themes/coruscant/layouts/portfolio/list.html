@@ -11,17 +11,18 @@
 
 <section class="py-5">
     <div class="container">
-        <div class="row g-3">
+        <div class="row g-4">
           
             {{ range where .Pages "Section" "portfolio" }}
             <div class="col-lg-4">
                 <a href="{{ .RelPermalink }}" class="cardAnchor">
                     <div class="card card_brand backdrFilter brand__hoverEffect">
                         <div class="card-body">
+                            <span class="kicker text-white">{{ .Params.ProjectYear }}</span>
+                            <span class="kicker text-white"> / {{ range .Params.categories }}{{ . }}{{ end }}</span>
                             <div class="spacer_100"></div>
-                            <span class="kicker col_brand">{{ .Params.ProjectYear }}</span>
-                            <h3 class="mb-3"><a class="blog_tile_title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                            <a class="blog_tile_summ" href="{{ .RelPermalink }}"><p>{{ .Summary }}</p></a>
+                            <h3 class="my-3 blog_tile_title">{{ .Title }}</h3>
+                            <p class="blog_tile_summ">{{ .Summary }}</p>
                         </div>
                     </div>
                 </a>
