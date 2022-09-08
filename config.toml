@@ -1,6 +1,6 @@
-baseURL = 'http://coruscant.space-4.de/'
-languageCode = 'de-de'
-title = 'Coruscant'
+baseURL = "http://coruscant.space-4.de/"
+languageCode = "de"
+title = "Coruscant"
 theme = "coruscant"
 
 # Main menu
