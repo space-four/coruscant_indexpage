@@ -18,6 +18,7 @@
   --space-black: #060f12;
 
   --linkColor: white;
+  --linkColorHover: rgb(155, 155, 155);
 }
 
 /* CSS Prefix */
@@ -86,7 +87,7 @@ h3 {
 }
 
 .anchor-brand:hover {
-  color: var(--primaryColor);
+  color: var(--linkColorHover);
   text-decoration: none;
   transition: all ease 0.2s;
 }
@@ -223,7 +224,7 @@ h3 {
 }
 
 .blog_tile_title:hover {
-  color: var(--primaryColor);
+  color: var(--linkColorHover);
 }
 
 /*****************************************************************************/
