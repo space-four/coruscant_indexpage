@@ -1,6 +1,26 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ partial "metadata.html" . }}
-<br><br>
-{{ .Content }}
+
+<section class="py-7">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-white">{{ .Title }}</h1>
+            <p class="text-white">{{ partial "metadata.html" . }}</p>
+        </div>
+    </div>
+</section>
+
+<section class="text-white">
+    <div class="container">
+        <p class="fw-bold fst-italic">{{ .Summary }}</p>
+    </div>
+</section>
+
+<section class="text-white py-7">
+    <div class="container">
+        {{ .Content }}
+    </div>
+</section>
+
+{{ partial "generalCallToAction.html"}}
+
 {{ end }}

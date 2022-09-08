@@ -16,6 +16,8 @@
   --primary-font: 'Rubik', sans-serif;
 
   --space-black: #060f12;
+
+  --linkColor: white;
 }
 
 /* CSS Prefix */
@@ -79,13 +81,13 @@ h3 {
 }
 
 .anchor-brand {
-  color: white;
-  text-decoration: underline;
+  color: var(--linkColor);
+  text-decoration: none;
 }
 
 .anchor-brand:hover {
   color: var(--primaryColor);
-  text-decoration: underline;
+  text-decoration: none;
   transition: all ease 0.2s;
 }
 
@@ -248,11 +250,11 @@ h3 {
 
 .card_brand {
   color: white;
-  border: 3px solid var(--grey2);
+  border: 0px solid var(--grey2);
 }
 
 .card_brand:hover {
-  border: 3px solid white;
+  border: 0px solid white;
 }
 
 /********************************************************************************/

@@ -16,13 +16,16 @@
             {{ range where .Pages "Section" "portfolio" }}
             <div class="col-lg-4">
                 <a href="{{ .RelPermalink }}" class="cardAnchor">
-                    <div class="card card_brand backdrFilter brand__hoverEffect">
+                    <div class="card card_brand backdrFilter brand__hoverEffect rounded-3">
                         <div class="card-body">
                             <span class="kicker text-white">{{ .Params.ProjectYear }}</span>
                             <span class="kicker text-white"> / {{ range .Params.categories }}{{ . }}{{ end }}</span>
                             <div class="spacer_100"></div>
                             <h3 class="my-3 blog_tile_title">{{ .Title }}</h3>
                             <p class="blog_tile_summ">{{ .Summary }}</p>
+                            <div class="mt-2">
+                                <a href="{{ .RelPermalink }}" class="anchor-brand">Weiterlesen</a>
+                            </div>
                         </div>
                     </div>
                 </a>
