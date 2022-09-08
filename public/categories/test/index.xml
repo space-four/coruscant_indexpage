@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Test on Coruscant</title>
+    <link>http://coruscant.space-4.de/categories/test/</link>
+    <description>Recent content in Test on Coruscant</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de</language>
+    <lastBuildDate>Thu, 08 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://coruscant.space-4.de/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Project with Image</title>
+      <link>http://coruscant.space-4.de/portfolio/projectwithimage/</link>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://coruscant.space-4.de/portfolio/projectwithimage/</guid>
+      <description>W/ Image dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</description>
+    </item>
+    
+  </channel>
+</rss>
