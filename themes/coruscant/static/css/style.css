@@ -24,7 +24,7 @@
 
 #primaryHeader {
   transition: all 0.2s linear;
-  /* Transit. needed to smoothen headerdisplay with navbar.js */
+  /* Transit. needed to smoothen headerdisplay with headerShadow.js */
 }
 
 /* CSS Prefix */
@@ -264,23 +264,31 @@ h3 {
 }
 
 .backdrFilter {
-  /* Fallback if @supports does not work */
-  background: hsl(0 0% 80% / 0.8);
+  background-color: rgba(255, 255, 255, .15);  
+  backdrop-filter: blur(0.5rem);
+  -webkit-backdrop-filter: blur(0.5rem);
 }
 
-@supports (backdrop-filter: blur(1rem)) {
-  /*If Browser supports Backdrop-Filter -> Use this instead of other background styles from above*/
-  .backdrFilter {
+@media screen and (max-width: 992px) {
+
+  .backdrFilterNavbar-mobile { 
     background-color: rgba(255, 255, 255, .15);  
     backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
   }
+
 }
-/*
-.backdrFilter-2 {
-  background-color: rgba(255, 255, 255, .15);  
-  backdrop-filter: blur(25px);
+
+@media screen and (min-width: 993px) {
+
+  .backdrFilterNavbar {
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(0.5rem);
+    -webkit-backdrop-filter: blur(0.5rem);
+  }
+
 }
-*/
+
 /*****************************************************************************/
 /* Card Styles */
 
