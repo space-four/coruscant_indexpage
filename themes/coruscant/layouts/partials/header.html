@@ -1,5 +1,7 @@
 
-<!--
+{{ partial "contact-modal.html" }}
+
+<!-- -------------------------------------------------------------------------------------------------
   Navbar utilizing Bootstrap 5 Navbar as a basic
   > Has been refactored to be used alongside Hugo's Menu System
 
@@ -8,6 +10,7 @@
 
   Followed this tutorial: https://harrycresswell.com/writing/menus-in-hugo/
 -->
+
 
 <nav id="primaryHeader" class="navbar navbar-expand-lg navbar-dark backdrFilterNavbar-mobile fixed-top" aria-label="Main Navigation">
 
@@ -117,7 +120,7 @@
 
       <!-- Contact Button --->
 
-      <button class="btn_brand btn_brand_prm my-1">Kontakt</button>
+      <button class="btn_brand btn_brand_prm my-1" data-bs-toggle="modal" data-bs-target="#exampleModal">Kontakt</button>
 
     </div>
   </div>

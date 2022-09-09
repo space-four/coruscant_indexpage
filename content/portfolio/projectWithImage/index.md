@@ -11,8 +11,3 @@ featuredImage: "portfolio/projectwithimage/demobild.png"
 This Project has an Image
 
 ![Example image](/portfolio/projectwithimage/demobild.png)
-
-
-<img alt="Image of a computer with Kubernetes logo" width="30%" src="demobil.jpg">
-
-

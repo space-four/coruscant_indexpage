@@ -4,7 +4,7 @@ title = "Coruscant"
 theme = "coruscant"
 
 # Main menu
-# pageRef => Needed for Highliting the Active Nav-Item
+# pageRef => Needed for Highlighting the Active Nav-Item
 # Parent => Determines the parent-nav-item. Needs to be 'Name' of parent
 
 [menu]

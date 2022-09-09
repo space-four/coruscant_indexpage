@@ -1,0 +1,51 @@
+{{ define "main" }}
+
+
+<section class="py-7">
+    <div class="container">
+        <div class="row">
+            <span class="kicker col_brand">{{ .Title }}</span>
+            <h1 class="text-white fw-bold">Hier einige tolle Ressourcen</h1>
+        </div>
+    </div>
+</section>
+
+<section class="py-5 bg_gradient elev-inset">
+    <div class="container">
+        <div class="row g-4">
+          
+            {{ range where .Pages "Section" "resources" }}
+
+            <div class="col-lg-4">
+                <a href="{{ .RelPermalink }}" class="cardAnchor">
+                    <div class="card card_brand backdrFilter brand__hoverEffect rounded-3" 
+                        style="background-image: 
+                                linear-gradient(
+                                rgba(0, 0, 0, 0.8), 
+                                rgba(0, 0, 0, 0.8)), 
+                            url('{{ .Site.BaseURL }}{{ .Params.featuredImage }}')">
+
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <span class="kicker text-white">{{ .Params.publishDate.Format "January 2006" }}</span>
+                                <span class="kicker text-white">{{ range .Params.categories }}{{ . }} {{ end }}</span>
+                            </div>
+                            <div class="spacer_100"></div>
+                            <h3 class="my-3 blog_tile_title">{{ .Title }}</h3>
+                            <p class="blog_tile_summ">{{ .Summary }}</p>
+                            <div class="mt-4">
+                                <a href="{{ .RelPermalink }}" class="anchor-brand fst-italic">LESEN </a><span class="col-gray-400"><i class="fa-solid fa-chevron-right"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {{ end }}
+    
+        </div>
+    </div>
+</section>
+
+{{ partial "generalCallToAction.html" }}
+
+{{ end }}
