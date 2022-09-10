@@ -2,7 +2,11 @@
     <div class="container">
         <div class="row g-3">
 
-            <div class="col-lg-3 col-12 mb-5"><img src="/media/space four_RGB_weiss.svg" alt="" height="30"></div>
+            <div class="col-lg-3 col-12 mb-5">
+                <div class="mb-5"><img src="/media/space four_RGB_weiss.svg" alt="" height="30"></div>
+                <h6 class="text-white fw-bold mb-3">Follow us</h6>
+                {{ partial "socials.html" }}
+            </div>
             
             <div class="col-lg-3 col-6">
                 <h5 class="text-white fw-bold mb-3">Services</h5>
@@ -11,6 +15,7 @@
                     <li class="text-white my-1"></li><a class="anchor-brand" href="{{ .URL }}">{{ .Name }}</a></li>
                     {{end}}
                 </ul>
+
             </div>
 
             <div class="col-lg-3 col-6">
@@ -21,7 +26,7 @@
                     {{end}}
                 </ul>
             </div>
-            <div class="col-lg-3 col-6">
+            <div class="col-lg-3 col-12">
                 <h5 class="text-white fw-bold mb-3">Kontakt</h5>
                 <ul class="list-unstyled">
                     <li class="text-white my-1"><a href="callto:+491626432403" class="anchor-brand">+49 (0) 162 / 6432 403</a></li>
