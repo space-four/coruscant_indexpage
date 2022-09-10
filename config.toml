@@ -3,22 +3,23 @@ languageCode = "de"
 title = "Coruscant"
 theme = "coruscant"
 
+# ---------------------------------------------
 # Main menu
 # pageRef => Needed for Highlighting the Active Nav-Item
 # Parent => Determines the parent-nav-item. Needs to be 'Name' of parent
 
-[menu]
-  [[menu.main]]
+[menus]
+  [[menus.main]]
     name = "SP4"
     weight = 10
-  [[menu.main]]
+  [[menus.main]]
     pageRef = "/"
     name = "Home"
     pre = "home"
     url = "/"
     weight = 15
     parent = "SP4"
-  [[menu.main]]
+  [[menus.main]]
     pageRef = "portfolio"
     name = "Portfolio"
     pre = "portfolio"
@@ -26,24 +27,24 @@ theme = "coruscant"
     weight = 16
     parent = "SP4"
 
-  [[menu.main]]
+  [[menus.main]]
     name = "Services"
     weight = 20
-  [[menu.main]]
+  [[menus.main]]
     pageRef="uiux-design"
     name = "Ui/Ux Design"
     pre = "uiux"
     url = "/uiux"
     weight = 25
     parent = "Services"
-  [[menu.main]]
+  [[menus.main]]
     pageRef="webdevelopment"
     name = "Web Development"
     pre = "webdevelopment"
     url = "/webdevelopment"
     weight = 26
     parent = "Services"
-  [[menu.main]]
+  [[menus.main]]
     pageRef="onlinemarketing"
     name = "Online Marketing"
     pre = "onlinemarketing"
@@ -51,32 +52,76 @@ theme = "coruscant"
     weight = 27
     parent = "Services"
 
-  [[menu.main]]
+  [[menus.main]]
     pageRef="about"
     name = "About"
     weight = 30
     parent = ""
-  [[menu.main]]
+  [[menus.main]]
     pageRef="career"
     name = "Jobs, Jobs, Jobs"
     pre = "career"
     url = "/career"
     weight = 35
     parent = "About"
-  [[menu.main]]
+  [[menus.main]]
     pageRef="resources"
     name = "Resources"
     pre = "resources"
     url = "/resources"
     weight = 35
     parent = "About"
-  [[menu.main]]
+  [[menus.main]]
     pageRef="coruscant"
     name = "Coruscant"
     pre = "coruscant"
     url = "/coruscant"
     weight = 36
     parent = "About"
+
+# ---------------------------------------------
+# Footer menu 1 - Services
+
+  [[menus.footer1]]
+    name = "Ui/Ux Design"
+    pre = "uiux"
+    url = "/uiux"
+    weight = 10
+  [[menus.footer1]]
+    name = "Web Development"
+    pre = "webdevelopment"
+    url = "/webdevelopment"
+    weight = 20
+  [[menus.footer1]]
+    name = "Online Marketing"
+    pre = "onlinemarketing"
+    url = "/onlinemarketing"
+    weight = 30
+
+# ---------------------------------------------
+# Footer menu 2 - Company
+
+  [[menus.footer2]]
+    name = "Portfolio"
+    pre = "portfolio"
+    url = "/portfolio"
+    weight = 10
+  [[menus.footer2]]
+    name = "Karriere"
+    pre = "career"
+    url = "/career"
+    weight = 20
+  [[menus.footer2]]
+    name = "Ressourcen"
+    pre = "resources"
+    url = "/resources"
+    weight = 30
+  [[menus.footer2]]
+    name = "Coruscant"
+    pre = "coruscant"
+    url = "/coruscant"
+    weight = 40
+
 
 
 # Some Instructions to Help Hugo find Bootstrap Stuff and Render them to Public when 'Hugo'

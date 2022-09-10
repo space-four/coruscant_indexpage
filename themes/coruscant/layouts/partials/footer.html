@@ -1,3 +1,45 @@
+<section class="py-7">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-3 col-6"><img src="/media/space four_RGB_weiss.svg" alt="" height="30"></div>
+            
+            <div class="col-lg-3 col-6">
+                <h5 class="text-white fw-bold mb-3">Services</h5>
+                <ul class="list-unstyled">
+                    {{ range .Site.Menus.footer1 }}
+                    <li class="text-white my-1"></li><a class="anchor-brand" href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{end}}
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <h5 class="text-white fw-bold mb-3">Company</h5>
+                <ul class="list-unstyled">
+                    {{ range .Site.Menus.footer2 }}
+                    <li class="text-white my-1"></li><a class="anchor-brand" href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{end}}
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+                <h5 class="text-white fw-bold mb-3">Lorem Ipsum</h5>
+                <ul class="list-unstyled">
+                    <li class="text-white my-1">Test-Item</li>
+                    <li class="text-white my-1">Test-Item</li>
+                    <li class="text-white my-1">Test-Item</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
 <div class="footer my-5  shadow">
     <div class="container">
         <p class="text-center text-white backdrFilter rounded py-1">Copyright (c) {{ now.Format "2006"}} | Brought to you with 💜 and 💡 by <a href="https://www.space-4.de" target="_blank">Space Four</a> | <a href="https://space-4.de/impressum/" target="_blank">Impressum</a></a></p>
