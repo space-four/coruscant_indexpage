@@ -23,7 +23,26 @@
     <title>Coruscant | Sick Ui/Ux Project</title>
 
     <link rel="icon" type="image/x-icon" href="/media/space_four_icon_weiss.png">
+
+    <div class="modal fade backdrFilter" id="contactModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get in Touch with us!</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Rufen Sie uns an</h6>
+          <button class="btn_brand btn_brand_prm">Call</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn_brand btn_brand_scnd elev-100" data-bs-dismiss="modal">Schliessen</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </head><body>
+
 
 
 <nav id="primaryHeader" class="navbar navbar-expand-lg navbar-dark backdrFilterNavbar-mobile fixed-top" aria-label="Main Navigation">
@@ -211,8 +230,7 @@
 
       
 
-      <button class="btn_brand btn_brand_prm my-1">Kontakt</button>
-
+      <button class="btn_brand btn_brand_prm my-1" data-bs-toggle="modal" data-bs-target="#contactModal">Kontakt</button>
     </div>
   </div>
 </nav><main>
@@ -243,19 +261,71 @@
     </div>
 </section>
 
-<section class="py-7 bg_noise">
+<section class="py-7 bg_infiniteServicesGrid elev-inset">
     <div class="container">
-      <div class="row h-100 align-items-center">
+      <div class="row h-100 text-white align-items-center">
         <div class="col">
-          <h2 class="display-1 text-white mb-5">Du willst mit uns etwas erschaffen?</h2>
-          <button class="btn_brand btn_brand_prm mt-3">Kontakt</button>
+          <h2 class="display-1 mb-3 fw-bold">Du willst ein Digitalprodukt bauen?</h2>
+          <button class="btn_brand btn_brand_prm mt-3" data-bs-toggle="modal" data-bs-target="#contactModal">Erzähl uns davon!</button>
         </div>
       </div>
     </div>
   </section>
 
   
-        </main><div class="footer my-5  shadow">
+        </main><section class="py-7">
+    <div class="container">
+        <div class="row g-3">
+
+            <div class="col-lg-3 col-12 mb-5"><img src="/media/space four_RGB_weiss.svg" alt="" height="30"></div>
+            
+            <div class="col-lg-3 col-6">
+                <h5 class="text-white fw-bold mb-3">Services</h5>
+                <ul class="list-unstyled">
+                    
+                    <li class="text-white my-1"></li><a class="anchor-brand" href="/uiux">Ui/Ux Design</a></li>
+                    
+                    <li class="text-white my-1"></li><a class="anchor-brand" href="/webdevelopment">Web Development</a></li>
+                    
+                    <li class="text-white my-1"></li><a class="anchor-brand" href="/onlinemarketing">Online Marketing</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-6">
+                <h5 class="text-white fw-bold mb-3">Company</h5>
+                <ul class="list-unstyled">
+                    
+                    <li class="text-white my-1"></li><a class="anchor-brand" href="/portfolio">Portfolio</a></li>
+                    
+                    <li class="text-white my-1"></li><a class="anchor-brand" href="/career">Karriere</a></li>
+                    
+                    <li class="text-white my-1"></li><a class="anchor-brand" href="/resources">Ressourcen</a></li>
+                    
+                    <li class="text-white my-1"></li><a class="anchor-brand" href="/coruscant">Coruscant</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6">
+                <h5 class="text-white fw-bold mb-3">Kontakt</h5>
+                <ul class="list-unstyled">
+                    <li class="text-white my-1"><a href="callto:+491626432403" class="anchor-brand">+49 (0) 162 / 6432 403</a></li>
+                    <li class="text-white my-1"><a href="mailto:backoffice@space-4.de" class="anchor-brand">backoffice@space-4.de</a></li>
+                    <li class="text-white my-1">Bamberg, Germany</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+<div class="footer my-5  shadow">
     <div class="container">
         <p class="text-center text-white backdrFilter rounded py-1">Copyright (c) 2022 | Brought to you with 💜 and 💡 by <a href="https://www.space-4.de" target="_blank">Space Four</a> | <a href="https://space-4.de/impressum/" target="_blank">Impressum</a></a></p>
     </div>

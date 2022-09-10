@@ -240,18 +240,61 @@ h3 {
 /*****************************************************************************/
 /* Background Styles */
 
+.bg_infiniteServicesGrid {
+  background-image: url('/media/images/background/InfiniteServicesGrid.svg');
+  background-size: 8rem;
+  background-repeat: repeat 0 0;
+  animation: infiniteMove linear infinite 9000ms;
+}
+
+@keyframes infiniteMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 8rem 8rem;
+  }
+}
+
 .bg_gradient {
-  /* Made with https://fffuel.co/bbblurry/ */
-  background: url('/media/images/bbblurry.svg') no-repeat center bottom fixed;
+  /* BG Gradient created with https://app.haikei.app/ */
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.65), 
+      rgba(0, 0, 0, 0.65)
+    ), 
+    url('/media/images/background/blurry-gradient-haikei.svg') no-repeat center bottom;
+  background-size: cover;
+}
+
+.bg_gradient_2 {
+  /* BG Gradient created with https://app.haikei.app/ */
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.75), 
+      rgba(0, 0, 0, 0.75)
+    ), 
+    url('/media/images/background/blurry-gradient-haikei_2.svg') no-repeat center bottom;
   background-size: cover;
 }
 
 .bg_dotted {
-  background: url('/media/images/backgr_dots.svg') repeat center bottom fixed;
+  background: url('/media/images/background/backgr_dots.svg') repeat center bottom fixed;
 }
 
 .bg_noise {
-  background: url('/media/images/nnnoise.svg') repeat center bottom fixed;
+  background: url('/media/images/background/nnnoise.svg') repeat center bottom fixed;
+}
+
+.bg_speedline {
+  /* Animated BG created with https://loading.io/background/m-speedline/ */
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.1), 
+      rgba(0, 0, 0, 0.1)
+    ), 
+    url('/media/images/background/Speedline-100s-1536px.svg') repeat center bottom fixed;
+  background-size: cover;
 }
 
 .bg_coruscant {
@@ -329,33 +372,38 @@ h3 {
 
 
 .btn_brand {
-  border-radius: 25px;
   padding: 7px 30px;
-	font: var(--primary-font);
 	cursor: pointer;
+  
+	font: var(--primary-font);
   letter-spacing: 0.1rem;
   font-weight: 400;
+
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+
+  transform: (0px, 0px);
+  transition: all 0.15s ease;
+}
+
+.btn_brand:hover {
+  box-shadow: none;
+  transform: translate(3px, 4px);
 }
 
 .btn_brand_prm {
   box-shadow: 4px 3px 0px 2px #422E77;
-  border-style: solid;
-  border-width: 2px 2px 2px 2px;
   border-color: #6247AA;
   background: var(--primaryColor);
 	color: white;
 }
 
-.btn_brand_prm:hover {
-  box-shadow: none;
-  transform: translate(3px, 4px);
-  transition: all 0.1s ease;
-}
-
 .btn_brand_scnd {
+  box-shadow: 4px 3px 0px 2px var(--gray-400);
+  border-color: var(--gray-300);
   background-color: white;
   color: var(--space-black);
-  border: none;
 }
 
 /********************************************************************************/

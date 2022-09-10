@@ -240,6 +240,22 @@ h3 {
 /*****************************************************************************/
 /* Background Styles */
 
+.bg_infiniteServicesGrid {
+  background-image: url('/media/images/background/InfiniteServicesGrid.svg');
+  background-size: 8rem;
+  background-repeat: repeat 0 0;
+  animation: infiniteMove linear infinite 9000ms;
+}
+
+@keyframes infiniteMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 8rem 8rem;
+  }
+}
+
 .bg_gradient {
   /* BG Gradient created with https://app.haikei.app/ */
   background: 
