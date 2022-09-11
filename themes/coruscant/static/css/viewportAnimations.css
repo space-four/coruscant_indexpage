@@ -34,7 +34,6 @@ VIEWPORT ANIMATIONS
   transition-property: all;
   transition-timing-function: ease-out;
   transition-duration: 200ms;
-/*  transition: all 350ms ease-out;*/
 }
 
 .slide-in.slide-up {
@@ -62,41 +61,148 @@ VIEWPORT ANIMATIONS
 
     > Default duration of effects is 200ms
     > t-duration-{value} adds {value} miliseconds to the transition-duration
+    > t-duration-{viewport-size}-{value} takes viewport-sizes into account
+      > Leaning on Bootstraps Grid-Thresholds
+        > no value provided - applied up to 576px
+        > sm - applied from 576px upwards
+        > md - applied from 768px upwards
+        > lg - applied from 992px upwards
+        > Breakpoints xl and xxl not applied for Animation Durations
 
 */
 
-.t-duration-100 {
-    transition-duration: 300ms;
+@media screen and (max-width: 575px){
+    .t-duration-100 {
+        transition-duration: 300ms;
+    }
+    
+    .t-duration-200 {
+        transition-duration: 400ms;
+    }
+    
+    .t-duration-300 {
+        transition-duration: 500ms;
+    }
+    
+    .t-duration-400 {
+        transition-duration: 600ms;
+    }
+    
+    .t-duration-500 {
+        transition-duration: 700ms;
+    }
+    
+    .t-duration-600 {
+        transition-duration: 800ms;
+    }
+    
+    .t-duration-700 {
+        transition-duration: 900ms;
+    }
+    
+    .t-duration-800 {
+        transition-duration: 1000ms;
+    }
 }
 
-.t-duration-200 {
-    transition-duration: 400ms;
+@media screen and (min-width: 576px){
+    .t-duration-sm-100 {
+        transition-duration: 300ms;
+    }
+    
+    .t-duration-sm-200 {
+        transition-duration: 400ms;
+    }
+    
+    .t-duration-sm-300 {
+        transition-duration: 500ms;
+    }
+    
+    .t-duration-sm-400 {
+        transition-duration: 600ms;
+    }
+    
+    .t-duration-sm-500 {
+        transition-duration: 700ms;
+    }
+    
+    .t-duration-sm-600 {
+        transition-duration: 800ms;
+    }
+    
+    .t-duration-sm-700 {
+        transition-duration: 900ms;
+    }
+    
+    .t-duration-sm-800 {
+        transition-duration: 1000ms;
+    }
 }
 
-.t-duration-300 {
-    transition-duration: 500ms;
+@media screen and (min-width: 768px){
+    .t-duration-md-100 {
+        transition-duration: 300ms;
+    }
+    
+    .t-duration-md-200 {
+        transition-duration: 400ms;
+    }
+    
+    .t-duration-md-300 {
+        transition-duration: 500ms;
+    }
+    
+    .t-duration-md-400 {
+        transition-duration: 600ms;
+    }
+    
+    .t-duration-md-500 {
+        transition-duration: 700ms;
+    }
+    
+    .t-duration-md-600 {
+        transition-duration: 800ms;
+    }
+    
+    .t-duration-md-700 {
+        transition-duration: 900ms;
+    }
+    
+    .t-duration-md-800 {
+        transition-duration: 1000ms;
+    }
 }
 
-.t-duration-400 {
-    transition-duration: 600ms;
-}
-
-.t-duration-500 {
-    transition-duration: 700ms;
-}
-
-.t-duration-600 {
-    transition-duration: 800ms;
-}
-
-.t-duration-700 {
-    transition-duration: 900ms;
-}
-
-.t-duration-800 {
-    transition-duration: 1000ms;
-}
-
-.t-duration-1800 {
-    transition-duration: 2000ms;
+@media screen and (min-width: 992px){
+    .t-duration-lg-100 {
+        transition-duration: 300ms;
+    }
+    
+    .t-duration-lg-200 {
+        transition-duration: 400ms;
+    }
+    
+    .t-duration-lg-300 {
+        transition-duration: 500ms;
+    }
+    
+    .t-duration-lg-400 {
+        transition-duration: 600ms;
+    }
+    
+    .t-duration-lg-500 {
+        transition-duration: 700ms;
+    }
+    
+    .t-duration-lg-600 {
+        transition-duration: 800ms;
+    }
+    
+    .t-duration-lg-700 {
+        transition-duration: 900ms;
+    }
+    
+    .t-duration-lg-800 {
+        transition-duration: 1000ms;
+    }
 }
