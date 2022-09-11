@@ -1,0 +1,102 @@
+/* 
+
+VIEWPORT ANIMATIONS
+
+> Combine multiple effects (e.g. slap classes slide-in and fade-in on the same html element)
+
+> Manipulate animations with utilities
+  > t-duration-{200 + x*100} > to increase transition duration by multiples of 100ms
+
+/*********************************************************************/
+/* Effects */
+
+/* Fade */
+
+.fade-in {
+    opacity: 0;
+    transition-property: all;
+    transition-timing-function: ease-out;
+    transition-duration: 200ms;
+  }
+  
+.fade-in.appear {
+  opacity: 1;
+}
+
+/* 
+    Slide 
+    ---
+    Combine slide class with a slide-{direction} to have element slide in {direction}
+    e.G adding `slide slide-toLeft` to a div will result in div sliding in from right to left 
+*/
+
+.slide-in {
+  transition-property: all;
+  transition-timing-function: ease-out;
+  transition-duration: 200ms;
+/*  transition: all 350ms ease-out;*/
+}
+
+.slide-in.slide-up {
+  transform: translateY(30%);
+}
+
+.slide-in.slide-down {
+    transform: translateY(-30%);
+}
+
+.slide-in.slide-toLeft {
+  transform: translateX(30%)
+}
+
+.slide-in.slide-toRight {
+    transform: translateX(-30%)
+}
+
+.slide-in.appear {
+  transform: translateY(0);
+}
+
+/*********************************************************************
+    Transition Durations 
+
+    > Default duration of effects is 200ms
+    > t-duration-{value} adds {value} miliseconds to the transition-duration
+
+*/
+
+.t-duration-100 {
+    transition-duration: 300ms;
+}
+
+.t-duration-200 {
+    transition-duration: 400ms;
+}
+
+.t-duration-300 {
+    transition-duration: 500ms;
+}
+
+.t-duration-400 {
+    transition-duration: 600ms;
+}
+
+.t-duration-500 {
+    transition-duration: 700ms;
+}
+
+.t-duration-600 {
+    transition-duration: 800ms;
+}
+
+.t-duration-700 {
+    transition-duration: 900ms;
+}
+
+.t-duration-800 {
+    transition-duration: 1000ms;
+}
+
+.t-duration-1800 {
+    transition-duration: 2000ms;
+}

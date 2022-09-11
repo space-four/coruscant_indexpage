@@ -1,11 +1,21 @@
 <section class="py-7">
     <div class="container">
+
+        <div class="row mb-5">
+            <div class="col d-flex justify-content-center">
+                <div>
+                    <h6 class="text-white fw-bold mt-5 mb-3 d-inline-block">Follow us</h6>
+                    {{ partial "socials.html" }}
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
         <div class="row g-3">
 
             <div class="col-lg-3 col-12 mb-5">
                 <div class="mb-5"><img src="/media/space four_RGB_weiss.svg" alt="" height="30"></div>
-                <h6 class="text-white fw-bold mb-3">Follow us</h6>
-                {{ partial "socials.html" }}
             </div>
             
             <div class="col-lg-3 col-6">
@@ -40,17 +50,15 @@
 </section>
 
 
-
-
-
-
-
 <div class="footer my-5  shadow">
     <div class="container">
         <p class="text-center text-white backdrFilter rounded py-1">Copyright (c) {{ now.Format "2006"}} | Brought to you with 💜 and 💡 by <a href="https://www.space-4.de" target="_blank">Space Four</a> | <a href="https://space-4.de/impressum/" target="_blank">Impressum</a></a></p>
     </div>
 </div>
 
+<!-- -------------------- JS ------------------ -->
+
 <script src="/js/bootstrap.bundle.min.js"></script> 
 <script src="/js/jquery/dist/jquery.min.js"></script>
 <script src="/js/headerShadow.js"></script>
+<script src="/js/viewportAnimations.js"></script>

@@ -41,3 +41,37 @@
   .py-10, .pb-10 {
     padding-bottom: 13rem ;
   }
+
+/*****************************************************************************/
+/* Elevation */
+
+.elev-100 {
+  box-shadow:0 .125rem .25rem rgba(0,0,0,.075)
+}
+
+.elev-200 {
+  box-shadow:0 .5rem 1rem rgba(0,0,0,.15)
+}
+
+.elev-300 {
+  box-shadow:0 1rem 3rem rgba(0,0,0,.175)
+}
+
+.elev-100-hovOnly:hover {
+  box-shadow:0 .125rem .25rem rgba(0,0,0,.075);
+  transition: all 0.2s ease-in-out;
+}
+
+.elev-200-hovOnly:hover {
+  box-shadow:0 .5rem 1rem rgba(0,0,0,.15);
+  transition: all 0.2s ease-in-out;
+}
+
+.elev-300-hovOnly:hover {
+  box-shadow:0 1rem 3rem rgba(0,0,0,.175);
+  transition: all 0.2s ease-in-out;
+}
+
+.elev-inset {
+  box-shadow: inset 0px 0px 16px 8px rgba(6,15,18,0.6);
+}
