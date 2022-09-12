@@ -7,6 +7,13 @@ VIEWPORT ANIMATIONS
 > Manipulate animations with utilities
   > t-duration-{200 + x*100} > to increase transition duration by multiples of 100ms
 
+> For many properties nomenclature implemented leaning on Bootstraps Grid-Thresholds
+  > no value provided - applied up to 576px
+  > sm - applied from 576px upwards
+  > md - applied from 768px upwards
+  > lg - applied from 992px upwards
+  > Breakpoints xl and xxl not applied for Animation Durations
+
 /*********************************************************************/
 /* Effects */
 
@@ -62,12 +69,6 @@ VIEWPORT ANIMATIONS
     > Default duration of effects is 200ms
     > t-duration-{value} adds {value} miliseconds to the transition-duration
     > t-duration-{viewport-size}-{value} takes viewport-sizes into account
-      > Leaning on Bootstraps Grid-Thresholds
-        > no value provided - applied up to 576px
-        > sm - applied from 576px upwards
-        > md - applied from 768px upwards
-        > lg - applied from 992px upwards
-        > Breakpoints xl and xxl not applied for Animation Durations
 
 */
 
@@ -206,3 +207,151 @@ VIEWPORT ANIMATIONS
         transition-duration: 1000ms;
     }
 }
+
+/*********************************************************************
+    Transition Delays 
+    
+    > t-delay-{value} adds a delay of {value} milliseconds to transition
+    > t-delay-{viewport-size}-{value} takes viewport-sizes into account
+
+*/
+
+    @media screen and (max-width: 575px){
+
+        .t-delay-none {
+            transition-delay: none;
+        }
+
+        .t-delay {
+            transition-delay: 100ms;
+        }
+
+        .t-delay-200 {
+            transition-delay: 200ms;
+        }
+
+        .t-delay-300 {
+            transition-delay: 300ms;
+        }
+
+        .t-delay-400 {
+            transition-delay: 400ms;
+        }
+
+        .t-delay-600 {
+            transition-delay: 600ms;
+        }
+
+        .t-delay-800 {
+            transition-delay: 800ms;
+        }
+
+        .t-delay-1000 {
+            transition-delay: 1000ms;
+        }
+    }
+    
+    @media screen and (min-width: 576px){
+
+        .t-delay-sm-none {
+            transition-delay: none;
+        }
+
+        .t-delay-sm {
+            transition-delay: 100ms;
+        }
+
+        .t-delay-sm-200 {
+            transition-delay: 200ms;
+        }
+
+        .t-delay-sm-300 {
+            transition-delay: 300ms;
+        }
+
+        .t-delay-sm-400 {
+            transition-delay: 400ms;
+        }
+
+        .t-delay-sm-600 {
+            transition-delay: 600ms;
+        }
+
+        .t-delay-sm-800 {
+            transition-delay: 800ms;
+        }
+
+        .t-delay-sm-1000 {
+            transition-delay: 1000ms;
+        }
+    }
+    
+    @media screen and (min-width: 768px){
+
+        .t-delay-md-none {
+            transition-delay: none;
+        }
+
+        .t-delay-md {
+            transition-delay: 100ms;
+        }
+
+        .t-delay-md-200 {
+            transition-delay: 200ms;
+        }
+
+        .t-delay-md-300 {
+            transition-delay: 300ms;
+        }
+
+        .t-delay-md-400 {
+            transition-delay: 400ms;
+        }
+
+        .t-delay-md-600 {
+            transition-delay: 600ms;
+        }
+
+        .t-delay-md-800 {
+            transition-delay: 800ms;
+        }
+
+        .t-delay-md-1000 {
+            transition-delay: 1000ms;
+        }
+    }
+    
+    @media screen and (min-width: 992px){
+
+        .t-delay-lg-none {
+            transition-delay: none;
+        }
+
+        .t-delay-lg {
+            transition-delay: 100ms;
+        }
+
+        .t-delay-lg-200 {
+            transition-delay: 200ms;
+        }
+
+        .t-delay-lg-300 {
+            transition-delay: 300ms;
+        }
+
+        .t-delay-lg-400 {
+            transition-delay: 400ms;
+        }
+
+        .t-delay-lg-600 {
+            transition-delay: 600ms;
+        }
+
+        .t-delay-lg-800 {
+            transition-delay: 800ms;
+        }
+
+        .t-delay-lg-1000 {
+            transition-delay: 1000ms;
+        }
+    }
