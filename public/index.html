@@ -242,13 +242,13 @@
         <div class="row">
 
             <div class="col-lg-8">
-                <h1 class="text-white display-1 fw-bold | mb-5">We are your digital companion.</h1>
-                <h3 class="text-white ">Beratung und Agentur für die Entwicklung und Umsetzung von Digitalprojekten.</h2>
-                  <button class="btn_brand btn_brand_prm mt-5" data-bs-toggle="modal" data-bs-target="#contactModal">Kontakt</button>
+                <h1 class="text-white display-1 fw-bold | mb-5 | fade-in">We are your digital companion.</h1>
+                <h3 class="text-white | fade-in t-delay-200">Beratung und Agentur für die Entwicklung und Umsetzung von Digitalprojekten.</h2>
+                  <button class="btn_brand btn_brand_prm mt-5 | fade-in t-delay-200" data-bs-toggle="modal" data-bs-target="#contactModal">Kontakt</button>
             </div>
 
             <div class="col-lg-4 mt-5">
-              <img class="img-fluid" src="/media/images/sp4mascot.png">
+              <img class="img-fluid | slide-in slide-toLeft fade-in t-duration-300" src="/media/images/sp4mascot.png">
             </div>
 
         </div>
@@ -259,12 +259,12 @@
     <div class="container">
 
         <div class="row | mb-4">
-          <h2 class="text-white fw-bold">Featured Projects</h2>
+          <h2 class="text-white fw-bold | fade-in slide-in slide-toRight t-duration-100">Featured Projects</h2>
         </div>
 
         <div class="row g-3 mb-3">
       
-            <div class="col-lg-4 col-12 | fade-in slide-in slide-up t-duration-300 t-duration-md-200">
+            <div class="col-lg-4 col-md-6 col-12 | fade-in slide-in slide-up t-duration-300 t-duration-md-200 t-delay-none">
               <a href="/" class="cardAnchor">
               <div class="card card_brand | backdrFilter brand__hoverEffect">
                 <div class="card-body">
@@ -277,7 +277,7 @@
               </a>
             </div>
         
-            <div class="col-lg-4 col-12 | fade-in slide-in slide-up t-duration-300 t-duration-md-400">
+            <div class="col-lg-4 col-md-6 col-12 | fade-in slide-in slide-up t-duration-300 t-duration-md-200 t-delay-md t-delay-none">
               <a href="/" class="cardAnchor">
               <div class="card card_brand backdrFilter brand__hoverEffect ">
                 <div class="card-body">
@@ -290,7 +290,7 @@
               </a>
             </div>
         
-            <div class="col-lg-4 col-12 | fade-in slide-in slide-up t-duration-300 t-duration-md-600">
+            <div class="col-lg-4 col-md-6 col-12 | fade-in slide-in slide-up t-duration-300 t-duration-md-200 t-delay-md-200 t-delay-none">
               <a href="/" class="cardAnchor">
               <div class="card card_brand backdrFilter brand__hoverEffect ">
                 <div class="card-body">
@@ -327,31 +327,48 @@
   <div class="container-fluid">
     <div class="row">
 
-      <div class="col-lg-4 bg-gray-100 p-5">
-        <span class="col-gray-400"><i class="fa-regular fa-object-group fa-3x"></i></span>
-        <hr>
-        <span class="kicker col_brand">Lorem</span>
-        <h3 class="">Service</h3>
-        <p class="my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        <button class="btn_brand btn_brand_scnd elev-100">Learn more</button>
+      <div class="col-lg-3 col-md-6 bg-gray-100 p-5 | ">
+        <div class="fade-in">
+          <span class="col-gray-400"><i class="fa-solid fa-layer-group fa-3x"></i></span>
+          <hr>
+          <span class="kicker col_brand">Design</span>
+          <h3 class="">Ui/Ux & Prototyping</h3>
+          <p class="my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+          <button class="btn_brand btn_brand_scnd elev-100">Learn more</button>
+        </div>
       </div>
 
-      <div class="col-lg-4 bg-gray-200 p-5">
-        <span class="col-gray-400"><i class="fa-solid fa-cubes fa-3x"></i></span>
-        <hr>
-        <span class="kicker col_brand">Lorem</span>
-        <h3 class="">Service</h3>
-        <p class="my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        <button class="btn_brand btn_brand_scnd elev-100">Learn more</button>
+      <div class="col-lg-3 col-md-6 bg-gray-200 p-5">
+        <div class="fade-in  t-delay">
+          <span class="col-gray-400"><i class="fa-solid fa-code fa-3x"></i></span>
+          <hr>
+          <span class="kicker col_brand">Dev</span>
+          <h3 class="">Frontend Entwicklung</h3>
+          <p class="my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+          <button class="btn_brand btn_brand_scnd elev-100">Learn more</button>
+        </div>
       </div>
 
-      <div class="col-lg-4 bg-gray-300 p-5">
-        <span class="col-gray-400"><i class="fa-regular fa-object-group fa-3x"></i></span>
-        <hr>
-        <span class="kicker col_brand">Lorem</span>
-        <h3 class="">Service</h3>
-        <p class="my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
-        <button class="btn_brand btn_brand_scnd elev-100">Learn more</button>
+      <div class="col-lg-3 col-md-6 bg-gray-300 p-5">
+        <div class="fade-in  t-delay-200">
+          <span class="col-gray-400"><i class="fa-solid fa-microscope fa-3x"></i></span>
+          <hr>
+          <span class="kicker col_brand">Testing</span>
+          <h3 class="">Software Testing & QA</h3>
+          <p class="my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+          <button class="btn_brand btn_brand_scnd elev-100">Learn more</button>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6 bg-gray-500 p-5">
+        <div class="fade-in t-delay-300">
+          <span class="col-gray-400"><i class="fa-solid fa-bars-progress fa-3x"></i></span>
+          <hr>
+          <span class="kicker col_brand">PM/PO</span>
+          <h3 class="">Agiles Projektmanagement</h3>
+          <p class="my-4">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+          <button class="btn_brand btn_brand_scnd elev-100">Learn more</button>
+        </div>
       </div>
       
     </div>
