@@ -367,7 +367,7 @@ h3 {
 
 .btn_brand_scnd {
   box-shadow: 4px 3px 0px 2px var(--gray-400);
-  border-color: var(--gray-300);
+  border-color: var(--gray-200);
   background-color: white;
   color: var(--space-black);
 }

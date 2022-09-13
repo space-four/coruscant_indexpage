@@ -72,7 +72,6 @@ VIEWPORT ANIMATIONS
 
 */
 
-@media screen and (max-width: 575px){
     .t-duration-100 {
         transition-duration: 300ms;
     }
@@ -104,7 +103,6 @@ VIEWPORT ANIMATIONS
     .t-duration-800 {
         transition-duration: 1000ms;
     }
-}
 
 @media screen and (min-width: 576px){
     .t-duration-sm-100 {
@@ -216,40 +214,37 @@ VIEWPORT ANIMATIONS
 
 */
 
-    @media screen and (max-width: 575px){
+.t-delay-none {
+    transition-delay: none;
+}
 
-        .t-delay-none {
-            transition-delay: none;
-        }
+.t-delay {
+    transition-delay: 100ms;
+}
 
-        .t-delay {
-            transition-delay: 100ms;
-        }
+.t-delay-200 {
+    transition-delay: 200ms;
+}
 
-        .t-delay-200 {
-            transition-delay: 200ms;
-        }
+.t-delay-300 {
+    transition-delay: 300ms;
+}
 
-        .t-delay-300 {
-            transition-delay: 300ms;
-        }
+.t-delay-400 {
+    transition-delay: 400ms;
+}
 
-        .t-delay-400 {
-            transition-delay: 400ms;
-        }
+.t-delay-600 {
+    transition-delay: 600ms;
+}
 
-        .t-delay-600 {
-            transition-delay: 600ms;
-        }
+.t-delay-800 {
+    transition-delay: 800ms;
+}
 
-        .t-delay-800 {
-            transition-delay: 800ms;
-        }
-
-        .t-delay-1000 {
-            transition-delay: 1000ms;
-        }
-    }
+.t-delay-1000 {
+    transition-delay: 1000ms;
+}
     
     @media screen and (min-width: 576px){
 
