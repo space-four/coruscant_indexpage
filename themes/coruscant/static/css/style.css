@@ -1,3 +1,26 @@
+.testbutton {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 1px;
+  background: transparent;
+  border: 2px solid #03e9f4;
+}
+
+.testbutton:hover {
+  background: #03e9f4;
+  color: #fff;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
 :root {
   /* STYLE GUIDE */
   --gray-100: #f8f9fa;
@@ -84,6 +107,17 @@ h3 {
 .kicker {
   font-weight: 700;
   letter-spacing: 1.2px;
+}
+
+a {
+  color: var(--linkColor);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--linkColorHover);
+  text-decoration: none;
+  transition: all ease 0.2s;
 }
 
 .anchor-brand {
@@ -206,7 +240,8 @@ h3 {
 /* Background Styles */
 
 .bg_infiniteServicesGrid {
-  background-image: url('/media/images/background/InfiniteServicesGrid.svg');
+  background: 
+    url('/media/images/background/InfiniteServicesGrid.svg');
   background-size: 8rem;
   background-repeat: repeat 0 0;
   animation: infiniteMove linear infinite 9000ms;
@@ -223,8 +258,7 @@ h3 {
 
 .bg_gradient {
   /* BG Gradient created with https://cssgradient.io/ */
-  background: rgb(6,15,18);
-  background: linear-gradient(166deg, rgba(6,15,18,1) 32%, rgba(98,71,170,1) 100%);
+  background: linear-gradient(#141e30, #243b55);
 }
 
 .bg_gradient_2 {
@@ -237,14 +271,6 @@ h3 {
     url('/media/images/background/blurry-gradient-haikei_2.svg') no-repeat bottom;
   background-size: cover;
   background-position: top;
-}
-
-.bg_dotted {
-  background: url('/media/images/background/backgr_dots.svg') repeat center bottom fixed;
-}
-
-.bg_noise {
-  background: url('/media/images/background/nnnoise.svg') repeat center bottom fixed;
 }
 
 .bg_speedline {
@@ -265,16 +291,6 @@ h3 {
     rgba(0, 0, 0, 0.6)
   ), 
   url(../media/2418844.jpg) no-repeat center bottom fixed;
-}
-
-.bg_midjourney-astronaut {
-  background: 
-  linear-gradient(
-    rgba(0, 0, 0, 0.1), 
-    rgba(0, 0, 0, 0.1)
-  ), 
-  url('/media/images/midjourney_astronaut.jpg') repeat center bottom fixed;
-background-size: cover;
 }
 
 .backdrFilter {
@@ -316,7 +332,6 @@ background-size: cover;
       transform: translateY(-8px);
       box-shadow:  14px 14px 28px #020607,
       -14px -14px 28px #0a181d69;
-
   }
 }
 
@@ -547,18 +562,6 @@ background-size: cover;
     -o-background-size: cover;
     background-size: cover;
   }
-}
-
-/*****************************************************************/
-/* FOOTER */
-
-.footer p {
-  color: var(--grey);
-  font-size: 13px;
-}
-
-.footer p a {
-  color: white;
 }
 
 /********************************************************************************/
