@@ -1,0 +1,30 @@
+{{ define "main" }}
+
+<section class="py-10 bg_gradient"
+    style="
+        background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url('{{ .Site.BaseURL }}{{ .Params.featuredImage }}');
+        background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <h1 class="text-white display-2 fw-bold">{{ .Title }}</h1>
+            <p class="text-white fs-4 mt-5">{{ .Params.SummaryLong }}</p>
+            <a href="{{ .Params.CustomerWebsite }}"><button class="btn_brand btn_brand_scnd mt-5">Zum Kunde</button></a>
+        </div>
+    </div>
+</section>
+
+<section class="text-white py-5">
+    <div class="container md-content">
+        <div class="row">
+            <div class="col blog_content">
+                {{ .Content }}
+            </div>
+        </div>
+    </div>
+</section>
+
+{{ partial "generalCallToAction.html"}}
+
+{{ end }}

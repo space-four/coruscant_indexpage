@@ -18,23 +18,24 @@
 
             <div class="col-lg-4">
                 <a href="{{ .RelPermalink }}" class="cardAnchor">
-                    <div class="card card_brand backdrFilter brand__hoverEffect rounded-3" 
-                        style="background-image: 
-                                linear-gradient(
-                                rgba(0, 0, 0, 0.8), 
-                                rgba(0, 0, 0, 0.8)), 
-                            url('{{ .Site.BaseURL }}{{ .Params.featuredImage }}')">
 
-                        <div class="card-body">
-                            <span class="kicker text-white">{{ .Params.ProjectYear }}</span>
-                            <span class="kicker text-white"> / {{ range .Params.categories }}{{ . }} {{ end }}</span>
-                            <div class="spacer_100"></div>
-                            <h3 class="my-3 blog_tile_title">{{ .Title }}</h3>
-                            <p class="blog_tile_summ">{{ .Summary }}</p>
-                            <div class="mt-4">
-                                <a href="{{ .RelPermalink }}" class="anchor-brand fst-italic">MORE </a><span class="col-gray-400"><i class="fa-solid fa-chevron-right"></i></span>
+                    <div class="card card_brand backdrFilter brand__hoverEffect rounded-3 blog_tile" 
+                        style="background-image: url('{{ .Site.BaseURL }}{{ .Params.featuredImage }}')">
+
+                        <div class="bg_gradientOverlay">
+                            <div class="card-body">
+                                <span class="kicker text-white">{{ .Params.ProjectYear }}</span>
+                                <span class="kicker text-white"> / 
+                                    {{ range .Params.categories }}{{ . }} {{ end }}</span>
+
+                                <div class="spacer_200"></div>
+
+                                <h6 class="">{{ .Params.Customer }}</h6>
+                                <h4 class="my-2 blog_tile_title">{{ .Title }}</h4>
+                                <p class="fs-7">{{ .Summary }}</p>
                             </div>
                         </div>
+
                     </div>
                 </a>
             </div>
