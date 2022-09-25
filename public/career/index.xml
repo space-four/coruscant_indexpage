@@ -5,6 +5,16 @@
     <link>http://coruscant.space-4.de/career/</link>
     <description>Recent content in Karriere on Coruscant</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>de</language><atom:link href="http://coruscant.space-4.de/career/index.xml" rel="self" type="application/rss+xml" />
+    <language>de</language>
+    <lastBuildDate>Thu, 08 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://coruscant.space-4.de/career/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Ui/Ux Designer:in</title>
+      <link>http://coruscant.space-4.de/career/testjob/</link>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://coruscant.space-4.de/career/testjob/</guid>
+      <description>Wir suchen eine UiUx Designer:in zur Unterstützung bei diesem und jenem Projekt. Bewirb dich wenn du krass Bock auf Lorem Ipsum hast.</description>
+    </item>
+    
   </channel>
 </rss>

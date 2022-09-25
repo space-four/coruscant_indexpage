@@ -8,51 +8,6 @@
     <language>de</language>
     <lastBuildDate>Thu, 08 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="http://coruscant.space-4.de/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A Project with Image</title>
-      <link>http://coruscant.space-4.de/portfolio/projectwithimage-copy-2/</link>
-      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://coruscant.space-4.de/portfolio/projectwithimage-copy-2/</guid>
-      <description>W/ Image dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</description>
-    </item>
-    
-    <item>
-      <title>A Project with Image</title>
-      <link>http://coruscant.space-4.de/portfolio/projectwithimage-copy-3/</link>
-      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://coruscant.space-4.de/portfolio/projectwithimage-copy-3/</guid>
-      <description>W/ Image dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</description>
-    </item>
-    
-    <item>
-      <title>A Project with Image</title>
-      <link>http://coruscant.space-4.de/portfolio/projectwithimage-copy-4/</link>
-      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://coruscant.space-4.de/portfolio/projectwithimage-copy-4/</guid>
-      <description>W/ Image dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</description>
-    </item>
-    
-    <item>
-      <title>A Project with Image</title>
-      <link>http://coruscant.space-4.de/portfolio/projectwithimage-copy/</link>
-      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://coruscant.space-4.de/portfolio/projectwithimage-copy/</guid>
-      <description>W/ Image dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</description>
-    </item>
-    
-    <item>
-      <title>A Project with Image</title>
-      <link>http://coruscant.space-4.de/portfolio/projectwithimage/</link>
-      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
-      
-      <guid>http://coruscant.space-4.de/portfolio/projectwithimage/</guid>
-      <description>W/ Image dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</description>
-    </item>
-    
-    <item>
       <title>Datenschutzerklärung</title>
       <link>http://coruscant.space-4.de/legalcontent/privacy/</link>
       <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
@@ -80,12 +35,21 @@
     </item>
     
     <item>
-      <title>Sick Ui/Ux Project</title>
-      <link>http://coruscant.space-4.de/portfolio/project1/</link>
+      <title>Ui/Ux Designer:in</title>
+      <link>http://coruscant.space-4.de/career/testjob/</link>
       <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
       
-      <guid>http://coruscant.space-4.de/portfolio/project1/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</description>
+      <guid>http://coruscant.space-4.de/career/testjob/</guid>
+      <description>Wir suchen eine UiUx Designer:in zur Unterstützung bei diesem und jenem Projekt. Bewirb dich wenn du krass Bock auf Lorem Ipsum hast.</description>
+    </item>
+    
+    <item>
+      <title>Website Relaunch</title>
+      <link>http://coruscant.space-4.de/portfolio/alcedis-website-relaunch/</link>
+      <pubDate>Thu, 08 Sep 2022 00:00:00 +0000</pubDate>
+      
+      <guid>http://coruscant.space-4.de/portfolio/alcedis-website-relaunch/</guid>
+      <description>Relaunch der Corporate Website mit Drupal 9</description>
     </item>
     
     <item>

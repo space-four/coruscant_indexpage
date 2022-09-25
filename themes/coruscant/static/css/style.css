@@ -298,7 +298,7 @@ a:hover {
     ), 
     url('/media/images/background/blurry-gradient-haikei_2.svg') no-repeat bottom;
   background-size: cover;
-  background-position: top;
+  background-position: bottom;
 }
 
 .bg_speedline {

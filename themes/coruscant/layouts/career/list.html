@@ -1,0 +1,133 @@
+{{ define "main" }}
+
+<section class="py-7 bg_speedline">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <span class="kicker col_brand">Career</span>
+                <h1 class=" display-1 fw-bold">Join our Mission to Mars!</h1>
+                <p class="my-4">Du hast Digital mit der Muttermilch aufgesogen? Du brennst für digitale Technologien? Wir suchen digitale Hustler:innen, Techies und Designer:innen für unser Team.</p>
+                <a class="link-flush" href="/servicespages/uiux-design/"><button class="btn_brand btn_brand_prm">Kontaktiere uns!</button></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-7 bg_gradient_2 elev-inset">
+    <div class="container">
+
+        <div class="row mb-5">
+            <div class="">
+              <h2 class="text-white fw-bold display-4 | fade-in slide-in slide-toRight t-duration-100">Offene Stellen:</h2>
+            </div>
+          </div>
+
+        <div class="row g-4">
+          
+            {{ range where .Pages "Section" "career" }}
+
+            <div class="fade-in slide-in slide-up t-duration-300">
+                <a href="{{ .RelPermalink }}" class="cardAnchor">
+
+                    <div class="card card_brand backdrFilter brand__hoverEffect rounded-3 py-4 ">
+                        <div class="container">
+                            <div class="row">
+                                
+                                <div class="col-2">
+                                <span class="col-gray-400"><i class="{{ .Params.featuredIcon }}"></i></span>
+                                </div>
+                                
+                                <div class="col-10">
+                                    <span class="kicker text-white">Start: {{ .Params.startDate }}</span>
+                                    <h4 class="my-2 blog_tile_title display-6 fw-bold">{{ .Title }}</h4>
+                                    <p class="fs-7">{{ .Summary }}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </a>
+            </div>
+            {{ end }}
+    
+        </div>
+    </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div id="uiux__prototyping" class="col-lg-7 mb-4">
+  
+              <div class=""><span class="kicker col_brand">Mission</span></div>
+              <h2 class="text-white fw-bold my-3">Building Products in Tech</h2>
+              <p class="fs-6 text-white">Zu unseren Kund:innen zählen Tech-Startups, Mittelständler und Marken, die mit einer starken Präsenz im digitalen Space punkten.</p>
+
+            </div>
+  
+            <div class="col-lg-5">
+                <img class="img-fluid rounded-3 elev-300" src="/media/images/midjourney_astronaut_2.jpeg" alt="">
+            </div>
+  
+        </div>
+    </div>
+  </section>
+
+<section class="py-5">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="">
+          <h2 class="text-white fw-bold display-4 | fade-in slide-in slide-toRight t-duration-100">Benefits</h2>
+        </div>
+      </div>
+
+        <div class="row g-4">
+
+            <div class="col-12 col-sm-6 col-lg-3 | slide-in slide-up fade-in t-duration-200 | t-duration-300 t-duration-md-200 t-delay-md t-delay-none">
+                <a href="/servicespages/uiux-design/#uiux__userResearch">
+                    <div class="card card_brand bg-gray-900 brand__hoverEffect | p-3 p-lg-4 rounded elev-200">
+                        <div class="mb-3"><span class="col-gray-500"><i class="fa-solid fa-person-hiking fa-2x"></i></span></div>
+                        <span class="kicker col_brand mb-1">100% Remote Work</span>
+                        <p class="text-white">Die SP4 arbeitet fully remote und besitzt <em>keine Büroräume.</em> Verfolge deine Projekte von wo aus du willst!</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 | slide-in slide-up fade-in t-duration-200 | t-duration-300 t-duration-md-200 t-delay-md-200 t-delay-none">
+                <a href="/servicespages/uiux-design/#uiux__wireframing">
+                    <div class="card card_brand bg-gray-900 brand__hoverEffect | p-3 p-lg-4 rounded elev-200">
+                        <div class="mb-3"><span class="col-gray-500"><i class="fa-solid fa-grip-vertical fa-2x"></i></span></div>
+                        <span class="kicker col_brand mb-1">Technologiewahl</span>
+                        <p class="text-white">Apple, Windows oder Linux? Du sagst uns was du brauchst und wir organisieren dir die Hardware deiner Wahl.</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-12 col-sm-6 col-lg-3 | slide-in slide-up fade-in t-duration-200 | t-duration-300 t-duration-md-200 t-delay-md-300 t-delay-none">
+                <a href="/servicespages/uiux-design/#uiux__prototyping">
+                    <div class="card card_brand bg-gray-900 brand__hoverEffect | p-3 p-lg-4 rounded elev-200">
+                        <div class="mb-3"><span class="col-gray-500"><i class="fa-solid fa-link fa-2x"></i></span></div>
+                        <span class="kicker col_brand mb-1">Prototyping</span>
+                        <p class="text-white">Überzeugen Sie Kunden und Stakeholder mit einem voll verlinkten Clickdummy.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 | slide-in slide-up fade-in t-duration-200 | t-duration-300 t-duration-md-200 t-delay-md-400 t-delay-none">
+                <a href="/servicespages/uiux-design/#uiux__responsiveDesign">
+                    <div class="card card_brand bg-gray-900 brand__hoverEffect | p-3 p-lg-4 rounded elev-200">
+                        <div class="mb-3"><span class="col-gray-500"><i class="fa-solid fa-mobile-screen-button fa-2x"></i></span></div>
+                        <span class="kicker col_brand mb-1">Responsive Design</span>
+                        <p class="text-white">Wir designen für Sie Views und Komponenten für alle Gerätegrössen.</p>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{{ partial "careerCallToAction.html" }}
+
+
+{{ end }}
